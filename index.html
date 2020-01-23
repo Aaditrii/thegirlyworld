@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <style>
+  @import url('https://fonts.googleapis.com/css?family=Tangerine');
+
+.sticky
+{
+  position: sticky;
+  position: -webkit-sticky;
+  top: 30px;
+  font: 50px 'Tangerine', sans-serif;
+  color: grey;
+  text-align: center;
+}
+.block-1, .block-3
+{
+  height: 900px;
+  padding: 70px 20px;
+  background-size: cover;
+  background-image: url('clouds.jpg');
+  box-sizing: border-box;
+  background-position: center;
+}
+.block-2
+{
+  background: url('dream.jpg') no-repeat fixed;
+  background-size: cover;
+  height: 900px;
+  background-position: center;
+}
+.block-3
+{
+  background-image: url('girl.jpg');
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  font-size: 18px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 10px;
+}
+
+.main-nav {
+  list-style-type: none;
+  display: none;
+}
+
+.nav-links,
+.logo {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.main-nav li {
+  text-align: center;
+  margin: 15px auto;
+}
+
+.logo {
+  display: inline-block;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.navbar-toggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 24px;
+}
+
+#chkToggle {
+  display: none;
+}
+
+#chkToggle:checked + ul.main-nav {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
+  }
+
+  #chkToggle:checked + ul.main-nav {
+    display: flex;
+  }
+
+  .main-nav {
+    display: flex;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .main-nav li {
+    margin: 0;
+  }
+
+  .nav-links {
+    margin-left: 40px;
+  }
+
+  .logo {
+    margin-top: 0;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+
+  .logo:hover,
+  .nav-links:hover {
+    color: rgba(255, 255, 255, 1);
+  }
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+
+.fa-tumblr {
+  background: #2c4762;
+  color: white;
+}
+
+</style>
+  <title>main</title>
+</head>
+<body>
+  <div class="block-1">
+     <nav class="navbar">
+    <label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
+            <i class="fa fa-bars"></i>
+        </label>
+    <a href="index.html" class="logo"><img src="girly.png" alt="logo"></a>
+    <input type="checkbox" id="chkToggle"></input>
+    <ul class="main-nav" id="js-menu">
+      <li>
+        <a href="home.html" class="nav-links">Home</a>
+      </li>
+      <li>
+        <a href="coding.html" class="nav-links">Women In Coding</a>
+      </li>
+      <li>
+        <a href="terms.html" class="nav-links">Terms And Conditions</a>
+      </li>
+      <li>
+        <a href="contact.html" class="nav-links">Contact Us</a>
+      </li>
+       <li>
+        <a href="page1.html" class="nav-links">Contact You!</a>
+      </li>
+    </ul>
+  </nav>
+    <div class="sticky"><br/><br/><br/><span style="color:black">Empower Women , Empower World</span><br/>
+     <span style="color:white;font-size: 35px;"> In temples,we always see a girl being worshipped as <strong>Goddess Durga</strong> or as any other goddess and as soon as we come out of the temple,we see the truth.<br/>
+This website mainly focuses on the content of making this world a more better place for a daughter,for a sister,a mother,a wife,a friend and a human.</span>
+    </div>
+  </div>
+  <div class="block-2"><div class="sticky"><br/>Let them fly very high..
+    <br/><br/><br/><br/><br/><br/><br/><br/>sky is not the limit..</div></div>
+  <div class="block-3">
+    <div class="sticky">thankyou..</div>
+     <a href="https://www.facebook.com/thegirlyworld222/?modal=admin_todo_tour" class="fa fa-facebook"></a><br/>
+    <a href="https://www.instagram.com/thegirlyworld222/" class="fa fa-instagram"></a><br/>
+  </div>
+
+  </body>
+  </html>

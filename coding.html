@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>women In coding</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+
+  <style>
+  @import url('https://fonts.googleapis.com/css?family=Tangerine');
+
+.sticky
+{
+  position: sticky;
+  position: -webkit-sticky;
+  top: 30px;
+  font: 50px 'Tangerine', sans-serif;
+  color: grey;
+  text-align: center;
+}
+.block-1
+{
+  padding: 70px 20px;
+  background-size: cover;
+  background-image: url('wall.jpg');
+  box-sizing: border-box;
+  background-position: center;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  font-size: 18px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 10px;
+}
+
+.main-nav {
+  list-style-type: none;
+  display: none;
+}
+
+.nav-links,
+.logo {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.main-nav li {
+  text-align: center;
+  margin: 15px auto;
+}
+
+.logo {
+  display: inline-block;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.navbar-toggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 24px;
+}
+
+#chkToggle {
+  display: none;
+}
+
+#chkToggle:checked + ul.main-nav {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
+  }
+
+  #chkToggle:checked + ul.main-nav {
+    display: flex;
+  }
+
+  .main-nav {
+    display: flex;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .main-nav li {
+    margin: 0;
+  }
+
+  .nav-links {
+    margin-left: 40px;
+  }
+
+  .logo {
+    margin-top: 0;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+
+  .logo:hover,
+  .nav-links:hover {
+    color: rgba(255, 255, 255, 1);
+  }
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.img1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height:200px;
+  width:400px;
+  transition: transform 2s;
+}
+.img1:hover{
+  transform:rotate(360deg);
+}
+
+</style>
+  <title>main</title>
+</head>
+<body>
+  <div class="block-1">
+     <nav class="navbar">
+    <label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
+            <i class="fa fa-bars"></i>
+        </label>
+    <a href="index.html" class="logo"><img src="girly.png" alt="logo"></a>
+    <input type="checkbox" id="chkToggle"></input>
+    <ul class="main-nav" id="js-menu">
+      <li>
+        <a href="home.html" class="nav-links">Home</a>
+      </li>
+      <li>
+        <a href="coding.html" class="nav-links">Women In Coding</a>
+      </li>
+      <li>
+        <a href="terms.html" class="nav-links">Terms And Conditions</a>
+      </li>
+      <li>
+        <a href="contact.html" class="nav-links">Contact Us</a>
+      </li>
+      <li>
+        <a href="page1.html" class="nav-links">Contact You</a>
+      </li>
+    </ul>
+  </nav>
+  <p>
+  </p>
+  <br/>
+  <br/>
+    <div class="sticky"> <p style="font-size:20px;font-family:verdana;">In Computer Science world , women have a lot of significant contributions in this field from the history and present.The first computer program was made by Ada Lovelace and also was the first to recognise that the machine had application beyond pure calculations.One of the first linkers were invented by Grace Hopper who was an American Computer Scientist.But the question arises , why I am writing so ... this is because computer science is the field where women can explore themselves to their full potential. Its not only about code but to analyse and compare the
+      computing problems with the real life problems and answer to them significantly as it has helped me a lot.</p>
+      <br/>
+      <img src="women_who_code.png" style="border:5px solid pink" alt="women who code" width="304" height="300"> 
+      <figcaption style="font-family:verdana;font-size:10px" align="center">Source:internet</figcaption>
+      <br/>
+      <br/> <h1 style="font-size:40px;color:red;">Watch these videos.....</h1><br/>
+<h1 style="font-size:40px;color:blue">1.Poetry Of Programming</h1><br/>
+      <div class="video-responsive">
+    <iframe width="420" height="315" src="https://www.youtube.com/embed/-jRREn6ifEQ" frameborder="0" allowfullscreen></iframe>
+</div>
+<h1 style="font-size:40px;color:blue"><br/>2.Inspiring Next Generation Of Females</h1><br/>
+      <div class="video-responsive">
+    <iframe width="420" height="315" src="https://www.youtube.com/embed/FEeTLopLkEo" frameborder="0" allowfullscreen></iframe>
+</div>
+  </div>
+</div>
+  </body>
+  </html>

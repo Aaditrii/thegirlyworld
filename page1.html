@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>find yourself</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Tangerine');
+html, body {
+  font-size: 62.5%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.background {
+  position: relative;
+  height: 100%;
+  background: #000000;
+  text-align: center;
+  background: url("book.jpg") 50% 50% no-repeat fixed;
+  background-size: cover;
+}
+
+.reveal {
+  z-index: 5;
+  position: absolute;
+  top: calc(50% - 10rem);
+  left: calc(50% - 10rem);
+  width: 20rem;
+  height: 20rem;
+  background: url("letters.jpg") 50% 50% no-repeat fixed;
+  border-radius:50%;
+  background-size: cover;
+  -webkit-mask-image: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,255,0.8) 36%, rgba(255,255,255,0) 70%);
+}
+
+</style>
+<script>
+  $(document).ready(function() {
+  var $reveal = $(".reveal"),
+      revealWHalf = $reveal.width() / 2;
+  $(document).on("mousemove", function(e) {
+    $reveal.css({"left": e.pageX - revealWHalf, "top": e.pageY - revealWHalf});
+  });
+});
+  </script>
+</head>
+  <body>
+<div class="background">
+  <h1 align="right">Trying to find out who you are , search a letter for you here.......</h1>
+   <h1 align="right"> Found? well thats you yourself!. Your life is like a blank book , you have to write the letters of success in it..</h1>
+  <div class="reveal"></div>
+</div>
+  </body>
